@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUDS</title>
+  <!-- Font Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Main File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUDS</h1>
+    <p>Product management system</p>
+
+    <div class="system">
+      <input class="title" type="text" placeholder="title" data-must>
+      <input class="price" type="number" placeholder="price" data-must>
+      <input class="taxes" type="number" placeholder="taxes" data-must>
+      <input class="ads" type="number" placeholder="ads" data-must>
+      <input class="discount" type="number" placeholder="discount" data-must>
+      <button class="total red">Total: <span></span></button>
+      <input class="count" type="number" min="1" placeholder="count">
+      <input class="category" type="text" placeholder="category" data-must>
+      <button class="create">Create</button>
+      <button class="save">Update</button>
+      <input class="search" type="text" placeholder="Search">
+      <div class="search-el">
+        <button data-type="search-title">Search by title</button>
+        <button data-type="search-category">Search by category</button>
+      </div>
+      <button class="clear-all">Clear All (<span></span>)</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Taxes</th>
+          <th>Ads</th>
+          <th>Discount</th>
+          <th>Total</th>
+          <th>Category</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+  </div>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Main File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #eee;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  position: relative;
+  top: -11px;
+  text-transform: uppercase;
+}
+
+button {
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 3px 3px 6px #2c2c2c82;
+}
+
+button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 6px;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+  font-family: 'Cairo', sans-serif;
+}
+
+@media (max-width: 765px) {
+  button {
+    font-size: 15px;
+  }
+}
+
+input.title {
+  width: 100%;
+}
+
+.total {
+  cursor: default;
+  margin-bottom: 7px;
+}
+
+input.price, input.taxes, input.ads, input.discount, .total {
+  width: calc(97% / 5);
+}
+
+.total.red {
+  cursor: default;
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 5px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 3px 3px 6px #2c2c2c82;
+  border-radius: 6px;
+}
+
+.total.red:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 991px) {
+  input.price, input.taxes, input.ads, input.discount, .total {
+    width: 100%;
+  }
+}
+
+input.count,
+input.category,
+button.create,
+button.save,
+input.search,
+.clear-all {
+  width: 100%;
+}
+
+button.create,
+button.save {
+  display: none;
+}
+
+
+
+button.save {
+  background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+button.save:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+input {
+  padding: 5px 15px;
+  background: #333;
+  border: none;
+  outline: none;
+  caret-color: #fff;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+  margin-bottom: 7px;
+  border-radius: 6px;
+}
+
+.search-el {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-el button {
+  width: 45%;
+}
+
+.clear-all {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 3px 3px 6px #2c2c2c82;
+  border-radius: 6px;
+  display: block;
+}
+
+.clear-all:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.clear-all span {
+  color: #ff1e23;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+}
+
+table thead {
+  text-transform: uppercase;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background-color: #dee2e6;
+  border-radius: 6px;
+}
+
+table button {
+  padding: 0 6px;
+  margin: 0;
+}
+
+table tbody tr {
+  text-transform: capitalize;
+}
+
+td,
+th {
+  padding: 10px;
+}
